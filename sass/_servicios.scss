@@ -1,0 +1,147 @@
+@mixin boxShadow {
+  box-shadow: 0 2px 40px 0 rgba(205, 205, 205, 0.55);
+}
+
+
+.servicios__titulo {
+  font-size: 4rem;
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+  font-weight: 600;
+  color: $gris;
+  text-align: center;
+}
+
+.servicios__carta {
+  border: none;
+  border-radius: 10px;
+  margin-bottom: 40px;
+  text-align: center;
+  transition: all 0.6s;
+
+  &:hover {
+    @include boxShadow();
+  }
+
+  &.servicios__carta--ilu {
+    @include boxShadow();
+  }
+
+  &:hover {
+    @include boxShadow();
+
+    transform: translateY(-10px);
+  }
+
+  .servicios__body {
+    padding-top: 55px;
+    padding-bottom: 62px;
+  }
+}
+
+.servicios__plan {
+
+  &--titulo {
+    font-size: 20px;
+    color: #000;
+    margin-bottom: 11px;
+    font-weight: normal;
+  }
+
+  &--costo {
+    font-size: 50px;
+    color: #000;
+    font-weight: bold;
+    margin-bottom: 29px;
+
+  }
+
+  &--icono {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    font-size: 40px;
+    line-height: 1;
+    margin-bottom: 24px;
+
+    .servicios__plan--basico & {
+      color: $veigue;
+    }
+
+    .servicios__plan--pro & {
+      color: $primario;
+    }
+
+    .servicios__plan--empresa & {
+      color: $empresaColor;
+    }
+  }
+
+  &--carac {
+    list-style: none;
+    padding-left: 0;
+    font-size: 14px;
+    line-height: 2.14;
+    margin-bottom: 35px;
+    color: #303132;
+
+  }
+
+  &--btncompra {
+    color: #000;
+    font-size: 16px;
+    font-weight: bold;
+    width: 145px;
+    height: 45px;
+    border-radius: 22.5px;
+    transition: all 0.4s;
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+
+    .servicios__plan--basico & {
+      background-color: $veigue;
+      color: #fff;
+
+      &:hover {
+        box-shadow: 0 3px 0 0 darken($veigue, 25%);
+      }
+
+      &:active {
+        transform: translateY(3px);
+        box-shadow: none;
+      }
+    }
+
+    .servicios__plan--pro & {
+      background-color: $primario;
+      color: #fff;
+
+      &:hover {
+        box-shadow: 0 3px 0 0 darken($primario, 15%);
+      }
+
+      &:active {
+        transform: translateY(3px);
+        box-shadow: none;
+      }
+    }
+
+    .servicios__plan--empresa & {
+      background-color: $empresaColor;
+      color: #fff;
+
+      &:hover {
+        box-shadow: 0 3px 0 0 darken($empresaColor, 15%);
+      }
+
+      &:active {
+        transform: translateY(3px);
+        box-shadow: none;
+      }
+    }
+  }
+}

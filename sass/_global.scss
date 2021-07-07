@@ -1,0 +1,187 @@
+/*---------Colores-----------*/
+
+$primario: #7DCCAB;
+$gris-claro: #d9d9d9;
+$veigue:#D8C39B;
+$gris: rgb(128, 128, 128);
+$sombra: 0 0 13px 0 rgba(185, 185, 185, 0.25);
+$empresaColor: #0000ff;
+
+
+/*-----------GLOBALES-----------*/
+
+* {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+    font-family: 'Quicksand', sans-serif;
+}
+
+html {
+
+    font-size: 62.5%;
+}
+
+
+/* ----------- HEADER ------------------- */
+
+header {
+    background-image: linear-gradient(rgb(243, 243, 243), #ffffff, );
+    background-image: #f5f5f5;
+    box-shadow: $sombra;
+
+    .header__logo {
+        max-width: 40%;
+    }
+
+    .header__menu {
+        .nav-link {
+            font-size: 2rem;
+            font-weight: 600;
+            color: $gris;
+            text-decoration: none;
+            margin: 2.5vw;
+            cursor: pointer;
+        }
+
+        a:hover {
+            text-decoration: underline $gris-claro;
+        }
+    }
+
+
+    /*------CTA------*/
+    .ctaContacto a {
+        text-decoration: none;
+
+        button {
+            font-size: 2rem;
+            font-weight: 600;
+            background-color: $primario;
+            text-decoration: none;
+            border-radius: 25px;
+            border: 2px solid #65a58a;
+            cursor: pointer;
+            color: #ffffff;
+            padding: 0.5vw 2vh;
+
+            &:active {
+                position: relative;
+                top: 2px;
+            }
+        }
+    }
+}
+
+
+
+/*----------MAPS-------------*/
+
+$redes:(twitter:#00acee,
+    facebook:#39569c,
+    instagram:linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d));
+
+
+@each $red,
+$color in $redes {
+    .footer__redes {
+        .footer__redes--#{$red}:hover {
+            color: white;
+            background: $color
+        }
+    }
+}
+
+;
+
+/*----------FOOTER--------------------*/
+
+footer {
+
+    background-image: linear-gradient(#fff, #d9d9d9);
+
+
+    .footer__bombilla a {
+        font-size: 4em;
+        color: #1E252A;
+
+        &:hover {
+            color: $veigue;
+        }
+    }
+
+    .footer__autor {
+        position: relative;
+        left: 4.8%;
+        font-size: 2em;
+    }
+
+    .footer__redes {
+        a {
+            border-radius: 10px;
+            color: #1E252A;
+            font-size: 4em;
+        }
+
+        .facebook,
+        .instagram {
+            margin-left: 1vh;
+        }
+
+
+    }
+
+}
+
+
+/*--------------POPUP----------------*/
+[data-popup] {
+    position: relative;
+
+    &:before,
+    &:after {
+        opacity: 0;
+        transform: translate(-50%, 0);
+        transition: 1s ease opacity, 0.005s ease transform;
+        will-change: opacity transform;
+        content: "";
+    }
+
+    &:hover {
+
+        &:before,
+        &:after {
+            position: absolute;
+            left: 50%;
+            transform: translate(-2%, -10px);
+            opacity: 1;
+        }
+
+        &:before {
+            bottom: 100%;
+            padding: 15px;
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 5px;
+            color: black;
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 20px;
+            text-align: center;
+            content: attr(data-popup);
+            white-space: wrap;
+        }
+
+        &:after {
+            top: 0;
+            height: 0;
+            width: 0;
+            border: solid transparent;
+            border-top-color: rgba(255, 255, 255, 0.9);
+            border-width: 5px;
+            content: "";
+        }
+    }
+}
