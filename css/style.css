@@ -15,6 +15,13 @@ html {
   font-size: 62.5%;
 }
 
+.subtexto__titulo--gradiente {
+  background: -webkit-gradient(linear, left top, left bottom, from(#3a3939), to(#01f7ff));
+  background: linear-gradient(#3a3939, #01f7ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 /* ----------- HEADER ------------------- */
 header {
   background-image: -webkit-gradient(linear, left top, left bottom, from(#f3f3f3), to(#ffffff));
@@ -214,13 +221,6 @@ footer .footer__redes .instagram {
   color: #000;
 }
 
-.subtexto .subtexto__titulo .subtexto__titulo--gradiente {
-  background: -webkit-gradient(linear, left top, left bottom, from(#3a3939), to(#01f7ff));
-  background: linear-gradient(#3a3939, #01f7ff);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
 .subtexto .subtexto__parrafo {
   max-width: 600px;
   margin: auto;
@@ -247,6 +247,58 @@ footer .footer__redes .instagram {
 .subtexto .subtexto__btn:active {
   position: relative;
   top: 2px;
+}
+
+/*----------ACERCADE---------*/
+.acercade .acercade__titulo {
+  font-size: 4rem;
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+  font-weight: 600;
+  color: gray;
+  text-align: center;
+}
+
+.acercade .acercade__titulo .acercade--negrita--titulo {
+  font-size: 4.6rem;
+  color: #7DCCAB;
+}
+
+.acercade .acercade__texto {
+  max-width: 700px;
+  font-size: 2rem;
+  font-weight: 600;
+  color: gray;
+  text-align: justify;
+  text-align-last: center;
+  margin-bottom: 4vh;
+}
+
+.acercade .acercade__lista--texto {
+  font-size: 2rem;
+  font-weight: 600;
+  color: gray;
+  text-align: start;
+  margin-bottom: 2vh;
+}
+
+.acercade .acercade__lista--texto .acercade__lista--check {
+  color: #7DCCAB;
+  margin-right: 0.5vw;
+}
+
+.acercade .acercade--negrita {
+  color: #001e24;
+  font-size: 2.2rem;
+}
+
+.acercade .acercade__imgGoogle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 /*----------mixin----------*/

@@ -1,3 +1,6 @@
+/*----------ACERCADE---------*/
+
+
 .acercade {
 
     .acercade__titulo {
@@ -7,5 +10,47 @@
         font-weight: 600;
         color: $gris;
         text-align: center;
+
+        .acercade--negrita--titulo {
+            font-size: 4.6rem;
+            color: $primario;
+
+        }
+    }
+
+    .acercade__texto {
+        max-width: 700px;
+        font-size: 2rem;
+        font-weight: 600;
+        color: $gris;
+        text-align: justify;
+        text-align-last: center;
+        margin-bottom: 4vh;
+    }
+
+    .acercade__lista--texto {
+        font-size: 2rem;
+        font-weight: 600;
+        color: $gris;
+        text-align: start;
+        margin-bottom: 2vh;
+
+        .acercade__lista--check {
+            color: $primario;
+            margin-right: 0.5vw;
+        }
+
+
+    }
+
+    .acercade--negrita {
+        color: rgb(0, 30, 36);
+        font-size: 2.2rem;
+
+    }
+
+    .acercade__imgGoogle {
+        display: flex;
+        justify-content: center;
     }
 }

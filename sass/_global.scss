@@ -6,8 +6,6 @@ $veigue:#D8C39B;
 $gris: rgb(128, 128, 128);
 $sombra: 0 0 13px 0 rgba(185, 185, 185, 0.25);
 $empresaColor: #0000ff;
-
-
 /*-----------GLOBALES-----------*/
 
 * {
@@ -23,6 +21,12 @@ $empresaColor: #0000ff;
 html {
 
     font-size: 62.5%;
+}
+
+.subtexto__titulo--gradiente {
+    background: linear-gradient(rgb(58, 57, 57), rgb(1, 247, 255));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 
