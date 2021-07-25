@@ -1,0 +1,23 @@
+{
+  "name": "placebo",
+  "version": "1.0.0",
+  "description": "Placebo, marketing website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "nikoSass": "sass --watch sass/style.scss css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nikoladm123/PLACEBO.git"
+  },
+  "author": "nikola",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nikoladm123/PLACEBO/issues"
+  },
+  "homepage": "https://github.com/nikoladm123/PLACEBO#readme",
+  "dependencies": {
+    "bootstrap": "^5.0.2"
+  }
+}
