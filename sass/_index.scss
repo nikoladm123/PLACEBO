@@ -13,14 +13,33 @@
         text-align: center;
     }
 
+    .principal__imagen {
+        text-align: center;
+    }
+
     .principal__texto {
-        font-size: 2rem;
+        font-size: 4rem;
         font-weight: 600;
         color: $gris;
         text-align: justify;
         text-align-last: center;
+
+        .principal__texto--negrita {
+            color: black;
+            font-size: 4.5rem;
+        }
+
     }
 
+    .principal__textoDos {
+        font-size: 3rem;
+        font-weight: 600;
+        margin-top: 5vh;
+        color: $gris;
+        text-align: justify;
+        text-align-last: center;
+
+    }
 }
 
 

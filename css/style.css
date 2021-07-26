@@ -10759,6 +10759,7 @@ textarea.form-control-lg {
 }
 
 html {
+  min-width: 300px;
   font-size: 62.5%;
 }
 
@@ -10770,6 +10771,7 @@ html {
 
 /* ----------- HEADER ------------------- */
 header {
+  min-width: 300px;
   background-image: linear-gradient(#f3f3f3, #ffffff);
   background-image: #f5f5f5;
   box-shadow: 0 0 13px 0 rgba(185, 185, 185, 0.25);
@@ -10826,6 +10828,7 @@ header .ctaContacto a button:active {
 
 /*----------FOOTER--------------------*/
 footer {
+  min-width: 300px;
   background-image: linear-gradient(#fff, #d9d9d9);
 }
 footer .footer__bombilla a {
@@ -10899,9 +10902,24 @@ footer .footer__redes .instagram {
   color: gray;
   text-align: center;
 }
+.principal .principal__imagen {
+  text-align: center;
+}
 .principal .principal__texto {
-  font-size: 2rem;
+  font-size: 4rem;
   font-weight: 600;
+  color: gray;
+  text-align: justify;
+  text-align-last: center;
+}
+.principal .principal__texto .principal__texto--negrita {
+  color: black;
+  font-size: 4.5rem;
+}
+.principal .principal__textoDos {
+  font-size: 3rem;
+  font-weight: 600;
+  margin-top: 5vh;
   color: gray;
   text-align: justify;
   text-align-last: center;
