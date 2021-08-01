@@ -12193,7 +12193,7 @@ footer .footer__redes .instagram {
 
 .contacto .formulario .contacto__boton--noestilo {
   border: none;
-  background-color: none;
+  background: none;
 }
 
 .contacto .formulario .contacto__boton {
