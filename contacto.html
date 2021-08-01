@@ -69,7 +69,9 @@
             <input class="" type="email" placeholder="Correo" name="Correo" required>
             <textarea name="Mensaje" placeholder="Mensaje:"></textarea>
             <div>
-              <input class="contacto__boton" type="submit" value="Enviar">
+              <button class="contacto__boton--noestilo">
+                <input class="contacto__boton" type="submit" value="Enviar">
+              </button>
             </div>
           </form>
           <div class="footer__mapa">
@@ -79,7 +81,6 @@
       </div>
     </div>
   </div>
-
 
 
   <footer>
@@ -104,7 +105,12 @@
       </div>
     </div>
   </footer>
-
 </body>
+
+<script>
+  $("button").click(function () {
+    swal("¡¡Muchas gracias por contactarnos!!!", "Te estaremos contactando lo antes posible", "success")
+  });
+</script>
 
 </html>
